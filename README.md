@@ -45,6 +45,7 @@ The features in the dataset are processed as follows:
 | Missing Values | Imputation with mean or mode |
 
 **Model Building**:
+
 For Task 1:
 - Choice of models:
 **GLM**: Easy to interpret, handles various data distributions, and suitable for both categorical and numerical features.
@@ -57,6 +58,7 @@ For Task 2:
 
 
 **Model Evaluation**: 
+
 For Task 1:
 The Gradient Boosting Model (GBM) outperforms the Generalized Linear Model (GLM) across all metrics, with lower MSE (0.8748 vs 1.0912), higher R² (0.5389 vs 0.4248), and better MAE (0.7395 vs 0.8417). It also has a lower RMSE (0.9353 vs 1.0446) and higher Adjusted R² (0.5375 vs 0.4232), showing better predictive accuracy and variance explanation. Overall, the GBM is more reliable and effective in capturing data patterns.
 
