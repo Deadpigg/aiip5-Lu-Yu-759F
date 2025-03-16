@@ -1,8 +1,10 @@
 # AIIP README:
 
-Name: Lu Yu
-Email: luyu8833@gmail.com
-NRIC: T0271759F
+**Name**: Lu Yu
+
+**Email**: luyu8833@gmail.com
+
+**NRIC**: T0271759F
 
 ## Overview
 
@@ -12,6 +14,7 @@ NRIC: T0271759F
 ** requirements.txt: A file listing the dependencies needed to run the project, ensuring compatibility across environments.
 
 ## Execution Instructions
+
 To execute the pipeline, follow these steps:
 
 - Clone the repository to your own device.
@@ -21,10 +24,11 @@ To execute the pipeline, follow these steps:
 - Modify parameters or model configurations as needed for experimentation
 
 ## Pipeline Flow
+
 The pipeline consists of the following steps:
 
 **Data Cleaning and Preprocessing**: 
-- Cleaned the data by standardizing text columns, ensuring sensor values were non-negative, and handling missing values by replacing numerical NaNs with medians and categorical NaNs with "unknown.". Mapped categorical variables to numerical values for consistency and removed duplicates and outliers using the IQR method. 
+-Cleaned the data by standardizing text columns, ensuring sensor values were non-negative, and handling missing values by replacing numerical NaNs with medians and categorical NaNs with "unknown.". Mapped categorical variables to numerical values for consistency and removed duplicates and outliers using the IQR method. 
 
 **Exploratory Data Analysis (EDA)**: 
 - The eda.ipynb file presents a detailed analysis of the dataset using visualizations like histograms, boxplots, and correlation matrices. It highlights key trends, such as the distribution of temperature conditions and the relationships between features.
