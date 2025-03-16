@@ -9,8 +9,11 @@
 ## Overview
 
 **README.md**: Provides an overview and instructions for running the pipeline.
+
 **eda.ipynb**: Jupyter Notebook that contains the exploratory data analysis of the dataset, which helps understand the data structure and identify trends and patterns.
+
 **model.py**: Python file containing the implementation of machine learning models, including training, evaluation, and selection of the best model.
+
 **requirements.txt**: A file listing the dependencies needed to run the project, ensuring compatibility across environments.
 
 ## Execution Instructions
