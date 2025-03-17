@@ -79,8 +79,4 @@ For Task 2:
 Logistic Regression outperformed KNN with higher accuracy (68.92% vs. 63.82%) and a better macro F1-score (0.67 vs. 0.61). It excelled in later growth stages, with an F1-score of 0.90 for Class 4-1, while KNN scored 0.85. The confusion matrix showed KNN struggled with misclassifications, especially between adjacent stages. Overall, Logistic Regression is more effective and efficient.
 
 ## Conclusion
-The pipeline provides a comprehensive approach to analyzing and modeling plant growth data. 
-Through data cleaning, exploratory data analysis (EDA), and feature processing, we gain valuable insights into the resource needs at different plant stages and their optimal environmental conditions.
-The model building and evaluation steps demonstrate the effectiveness of machine learning models, with Gradient Boosting outperforming Generalized Linear Models (GLM) in Goal 1 and Logistic Regression outperforming KNN in Goal 2. 
-These results highlight the importance of model selection and optimization for improving predictive accuracy and overall efficiency. 
-The pipeline is designed to be flexible for experimentation, enabling further improvements and adaptations as needed.
+The pipeline provides a comprehensive approach to analyzing and modeling plant growth data. Through data cleaning, exploratory data analysis (EDA), and feature processing, we gain valuable insights into the resource needs at different plant stages and their optimal environmental conditions. The model building and evaluation steps demonstrate the effectiveness of machine learning models, with Gradient Boosting outperforming Generalized Linear Models (GLM) in Task 1 and Logistic Regression outperforming KNN in Task 2. These results highlight the importance of model selection and optimization for improving predictive accuracy and overall efficiency. The pipeline is designed to be flexible for experimentation, enabling further improvements and adaptations as needed.
