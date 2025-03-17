@@ -3,43 +3,39 @@ import pandas as pd
 import os
 from dotenv import load_dotenv
 
-# Load environment variables from the .env file
+# Load environment variables
 load_dotenv()
 
-def load_data(db_path=None):
+# Print out the DB path to ensure it's loaded correctly
+db_path = os.getenv("DB_PATH")
+print("DB_PATH loaded from .env:", db_path)
+
+# Function to load data from SQLite database into a pandas DataFrame
+def load_data(query, db_path):
     """
-    Loads data from the SQLite database and returns a Pandas DataFrame.
-    If no db_path is provided, it will use the path from the environment variable DB_PATH.
+    Loads data from the SQLite database using a SQL query into a pandas DataFrame.
+
+    :param query: SQL query to execute
+    :param db_path: Path to the SQLite database file
+    :return: pandas DataFrame containing the query result
     """
-    if db_path is None:
-        db_path = os.getenv("DB_PATH")  # Use the DB_PATH from .env file if not provided
-
-    # Print to check if DB_PATH is correctly loaded
-    print(f"Database path: {db_path}")
-
-    if db_path is None:
-        raise ValueError("Database path is not provided and no DB_PATH is set in the environment variables.")
-
+    # Establish connection to the database
     conn = sqlite3.connect(db_path)
-    
-    # Get table names
-    cursor = conn.cursor()
-    cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
-    tables = cursor.fetchall()
-    print("Tables in database:", tables)
+    try:
+        # Execute the query and load the data into a pandas DataFrame
+        df = pd.read_sql_query(query, conn)
+        return df
+    except Exception as e:
+        print(f"Error loading data: {e}")
+    finally:
+        # Close the connection
+        conn.close()
 
-    # Load data if table exists
-    if tables:
-        table_name = tables[0][0]  # Select the first table in the database
-        df = pd.read_sql(f"SELECT * FROM {table_name};", conn)  
-    else:
-        raise ValueError("No table found in the database.")
-    
-    conn.close()
-    
-    return df
+# Example SQL query to fetch data from a table named 'your_table'
+query = "SELECT * FROM your_table"
 
-if __name__ == "__main__":
-    df = load_data()  # The function will now use the DB_PATH from the .env file
-    print("Data successfully loaded!")
-    print(df.head())  # Display the first few rows of the loaded data
+# Load data using the data loader function
+data = load_data(query, db_path)
+
+# Display the loaded data
+print(data.head())
