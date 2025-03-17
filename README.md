@@ -59,12 +59,12 @@ The features in the dataset are processed as follows:
 
 **Model Building**:
 
-For Task 1:
+For Goal 1:
 - Choice of models:
 **GLM**: Easy to interpret, handles various data distributions, and suitable for both categorical and numerical features.
 **GBM**: Ensemble learning approach with high performance and the ability to capture complex relationships among features.
 
-For Task 2:
+For Goal 2:
 - Choice of models:
 **KNN**: Simple concept, robust to outliers, and capable of handling non-linear relationships.
 **Logistic regression**: simple, efficient model that provides probabilistic outputs, works well with linearly separable data, and can be regularized to prevent overfitting.

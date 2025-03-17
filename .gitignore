@@ -1,13 +1,31 @@
-.DS_Store
-.zsh_history
-.zshrc
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore environment files
+.env
+
+# Ignore SQLite database file
+data/agri.db
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore IDE/editor files
+.idea/
 .vscode/
-Library/
-Applications/
-Desktop/
-Documents/
-Downloads/
-Movies/
-Music/
-Pictures/
-Public/
+
+# Ignore operating system files
+.DS_Store
+Thumbs.db
+
+# Ignore virtual environment folders
+venv/
+env/
+
+# Ignore log files
+*.log
+
+# Ignore dependency directories
+node_modules/

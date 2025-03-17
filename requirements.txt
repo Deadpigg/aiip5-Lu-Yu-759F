@@ -22,7 +22,6 @@ nest-asyncio==1.6.0
 numpy==2.2.2
 openpyxl==3.1.5
 packaging==24.2
-panadas==0.2
 pandas==2.2.3
 parso==0.8.4
 pexpect==4.9.0
@@ -50,3 +49,4 @@ traitlets==5.14.3
 typing_extensions==4.12.2
 tzdata==2025.1
 wcwidth==0.2.13
+python-dotenv==1.0.0
