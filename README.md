@@ -12,7 +12,13 @@
 
 **eda.ipynb**: Jupyter Notebook that contains the exploratory data analysis of the dataset, which helps understand the data structure and identify trends and patterns.
 
-**model.py**: Python file containing the implementation of machine learning models, including training, evaluation, and selection of the best model.
+**model.py**: 
+
+- dataloader.py: This script handles the loading and preprocessing of raw data, ensuring it is properly formatted and split into training and test sets for model training.
+
+- preprocessing.py: This file performs data cleaning, feature encoding, and transformation to prepare the data for input into machine learning models.
+
+- train_modelpredict.py: This script trains a logistic regression model on the preprocessed data and makes predictions on new or test data.
 
 **requirements.txt**: A file listing the dependencies needed to run the project, ensuring compatibility across environments.
 
@@ -74,4 +80,3 @@ Logistic Regression outperformed KNN with higher accuracy (68.92% vs. 63.82%) an
 
 ## Conclusion
 The pipeline provides a comprehensive approach to analyzing and modeling plant growth data. Through data cleaning, exploratory data analysis (EDA), and feature processing, we gain valuable insights into the resource needs at different plant stages and their optimal environmental conditions. The model building and evaluation steps demonstrate the effectiveness of machine learning models, with Gradient Boosting outperforming Generalized Linear Models (GLM) in Task 1 and Logistic Regression outperforming KNN in Task 2. These results highlight the importance of model selection and optimization for improving predictive accuracy and overall efficiency. The pipeline is designed to be flexible for experimentation, enabling further improvements and adaptations as needed.
-  

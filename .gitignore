@@ -1,0 +1,13 @@
+.DS_Store
+.zsh_history
+.zshrc
+.vscode/
+Library/
+Applications/
+Desktop/
+Documents/
+Downloads/
+Movies/
+Music/
+Pictures/
+Public/
