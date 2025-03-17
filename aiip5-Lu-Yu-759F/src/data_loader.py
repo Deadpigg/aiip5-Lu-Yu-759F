@@ -1,7 +1,7 @@
 import sqlite3
 import pandas as pd
 
-def load_data(db_path="/Users/luyufish/Downloads/data/agri.db"):
+def load_data(db_path="/Users/luyufish/Downloads/data/agri.db"): #edit according to your pathname 
     """
     Loads data from the SQLite database and returns a Pandas DataFrame.
     """
